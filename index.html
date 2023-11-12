@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('7.png') center/cover no-repeat;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+    }
+
+    .diwali-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .diwali-header {
+      margin-bottom: 30px;
+    }
+
+    .diwali-header h1 {
+      font-size: 4rem;
+      color: #e44d26;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+    }
+
+    .diwali-subheader {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .diwali-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .diwali-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .diwali-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .diwali-image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 15px;
+    }
+
+    .diwali-image:hover .diwali-image-overlay {
+      opacity: 1;
+    }
+
+    .diwali-image-overlay h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .diwali-click-me {
+      margin-top: 20px; /* Added margin-top to create space between images and button */
+      background-color: #e44d26;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .diwali-click-me:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="diwali-container">
+    <div class="diwali-header">
+      <h1>Wishing You a Joyful Diwali</h1>
+    </div>
+
+    <div class="diwali-subheader">
+      <p>May the Festival of Lights brighten your life with happiness and prosperity!</p>
+    </div>
+
+    <div class="diwali-images">
+      <div class="diwali-image">
+        <img src="2.png" alt="Diwali Image 1">
+        <div class="diwali-image-overlay">
+          <h4>Diwali Celebration</h4>
+        </div>
+      </div>
+      <div class="diwali-image">
+        <img src="3.png" alt="Diwali Image 2">
+        <div class="diwali-image-overlay">
+          <h4>Lights and Decorations</h4>
+        </div>
+      </div>
+      <div class="diwali-image">
+        <img src="6.png" alt="Diwali Image 3">
+        <div class="diwali-image-overlay">
+          <h4>Diwali Rangoli</h4>
+        </div>
+      </div>
+    </div>
+    <a href="w2.html" class="diwali-click-me">Click Me For Diwali Surprise!</a>
+  </div>
+
+  </div>
+  <!-- Add more images as needed -->
+  </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Here for a Surprise!</title>
+</head>
+<body>
+    
+    <a href="#" id="musicRollLink"><h1>Click here..to open the surprise!</h1></a>
+
+    <iframe id="soundcloud-widget" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" style="display: none;"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1662909336&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script>
+        document.getElementById('musicRollLink').addEventListener('click', function() {
+            var widget = SC.Widget(document.getElementById('soundcloud-widget'));
+
+            widget.bind(SC.Widget.Events.READY, function() {
+                widget.play();
+            });
+
+            // Show the hidden iframe
+            document.getElementById('soundcloud-widget').style.display = 'block';
+            
+            // Prevent the link from navigating
+            return false;
+        });
+    </script>
+</body>
+</html>
